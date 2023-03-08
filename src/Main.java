@@ -1,4 +1,4 @@
-import Transport.Auto;
+import Transport.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,8 +20,20 @@ public class Main {
         System.out.println(kia);
         System.out.println(hyundai);
 
-
         System.out.println(test);
+
+        for (int i =1; i<=3;i++){
+            Bus bus = new Bus (
+                    "Bus brand #" + i,
+                    "bus model #" + i,
+                    2005 +i,
+                    "Russia",
+                    "Yellow",
+                    130
+                    );
+            System.out.println(bus);
+
+        }
 
     }
 }
